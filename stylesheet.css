@@ -172,32 +172,26 @@ img.animationImg {
 .hide{
 	display:none;}
 
-/* Smartphones (portrait and landscape) ----------- */
+/* -------------Smartphones (portrait and landscape) ------------------------------- */
 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
 .logo{
-	height:70px;
-	width:50px;
+	height:60px;
+	width:40px;
 	}
 h1{
-	font-size:2em;
+	font-size:1.8em;
 	}
 section {
 	position: relative;
 	top: 30%;
 	transform: translateY(-50%);
 }
-footer {
-  position: absolute;
-  bottom: px;
-  bottom: 0px;
-  left: 44%
-}	
 section p{
-	font-size:1em;
+	font-size:0.8em;
 }
 .game-main h1{
 	font-size:1.6em;
@@ -212,7 +206,6 @@ section p{
 .animation-main{
 	height:205px;
 	width:302px;
-
 	position: relative;
 	top: 30%;
 	transform: translateY(-50%);
@@ -258,20 +251,19 @@ img.animationImg {
 and (min-width : 321px) {
 /* Styles */
 .logo{
-	height:70px;
-	width:50px;
+	height:60px;
+	width:40px;
 	}
 h1{
-	font-size:2em;
+	font-size:1.8em;
 	}
+section {
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+}
 section p{
-	font-size:1em;
-}
-.main {
-	position: relative;
-}
-.game-main {
-	position: relative;
+	font-size:0.8em;
 }
 .game-main h1{
 	font-size:1.6em;
@@ -279,22 +271,16 @@ section p{
 .parts{
 	width: 285px;
 	height: 191px;
-	}
-.animation-main{
-	height:495px;
-	background:#fff;
-	width:900px;
-	display:block;
-	margin:0px auto;
-	}
-.animations{
-	float:left;
-	width:698px;
-	position:relative;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:302px;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
 	}
 .animations{
 	width: 300px;
@@ -337,25 +323,36 @@ img.animationImg {
 and (max-width : 320px) {
 /* Styles */
 .logo{
-	height:70px;
-	width:50px;
+	height:60px;
+	width:40px;
 	}
 h1{
-	font-size:2em;
+	font-size:1.8em;
 	}
+section {
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+}
 section p{
-	font-size:1em;
-	}
+	font-size:0.8em;
+}
 .game-main h1{
 	font-size:1.6em;
 	}
 .parts{
 	width: 285px;
 	height: 191px;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:302px;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
 	}
 .animations{
 	width: 300px;
