@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#test run v0.0.7 Another run is here
+CACHE:
+	images/gif/chin.gif
+	images/gif/eyes.gif
+	images/gif/fall.gif
+	images/gif/groin.gif
+	images/gif/groin2.gif
+	images/gif/instep.gif
+	images/gif/nose.gif
+	images/gif/plexus.gif
+	images/gif/shin.gif
+
+NETWORK:
+*

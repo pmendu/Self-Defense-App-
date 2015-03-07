@@ -21,8 +21,8 @@ $(document).ready(function () {
 
 	var eyesFrame = ['<div class="commonGif eyes"></div>'];
 	var staticFrame = ['<div class="commonGif static"></div>'];
-	var $body = $('body');
-
+	var $body = $('html, body');
+	
 	var imageSrcLookup = {
 		"nose" : "images/gif/nose.gif",
 		"eyes" : "images/gif/eyes.gif",
