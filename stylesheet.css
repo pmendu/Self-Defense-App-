@@ -359,7 +359,7 @@ section {
 }
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 30%;
   left: 44%
 }	
 a.downbutton{
