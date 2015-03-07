@@ -74,8 +74,6 @@ section p{
 footer{
 	text-align:center;
 	padding:10px 20px;
-	position:absolute;
-	bottom:10%;
 	}
 a.downbutton{
 	background:url(images/down-arrow.png) no-repeat 0 0;
@@ -84,7 +82,6 @@ a.downbutton{
 	text-align:center;
 	display:inline-block;
 	margin:40px 10px 20px;
-	background-size: 100%;
 	}
 .game-main{
 	padding:0px 0px 22px;
@@ -92,7 +89,6 @@ a.downbutton{
 	background:#fff;
 	height:100%;
 	width:100%;
-	position: relative;
 	}
 .parts{
 	background:url(images/parts.png) no-repeat center center;
@@ -107,7 +103,7 @@ a.downbutton{
 	background:#fff;
 	width:900px;
 	display:block;
-	margin:10px auto;
+	margin:0px auto;
 	border: 1px solid #E7E7E7;
 	position:relative;
 	}
@@ -125,7 +121,6 @@ img.animationImg {
 	position:absolute;
 	top:0;
 	left:0;	
-	transform: translate3d(0px,0px,0px);
 }
 .scoreArea, .finishHimBtn{
 	position:absolute;
@@ -177,18 +172,18 @@ img.animationImg {
 .hide{
 	display:none;}
 
-/* -------------------------------------------------------Media Queries--------------------------------- */
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
 .logo{
-	height:160px;
-	width:100px;
+	height:70px;
+	width:50px;
 	}
 h1{
-	font-size:2.3em;
+	font-size:2em;
 	}
 section {
 	position: relative;
@@ -197,35 +192,33 @@ section {
 }
 footer {
   position: absolute;
-  bottom: 30%;
+  bottom: px;
+  bottom: 0px;
   left: 44%
 }	
-a.downbutton{
-	height: 77px;
-	width: 77px;
-	}
 section p{
-	font-size:1.5em;
+	font-size:1em;
 }
 .game-main h1{
-	font-size:2em;
+	font-size:1.6em;
 	}
 .parts{
-	width: 300px;
-	height: 210px;
+	width: 285px;
+	height: 191px;
 	position: relative;
 	top: 30%;
 	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
-	width:290px;
+	width:302px;
+
 	position: relative;
 	top: 30%;
 	transform: translateY(-50%);
 	}
 .animations{
-	width: 290px;
+	width: 300px;
 	}
 img.animationImg {
 	height: 168px;
@@ -233,24 +226,24 @@ img.animationImg {
 	margin-top: 27px;
 }
 .actions{
-	width:70px;
+	width:80px;
 	}
 .actions ul li{
-	font-size:0.5em;
+	font-size:0.6em;
 	height:4px;
 	line-height:4px;
 	}
 .scoreArea, .finishHimBtn{
-	left:140px;
+	left:150px;
 	top:5px;
 	padding:5px;
 	width:60px;
 	font-size:0.7em;
 	}
 .finishHimBtn{
-	left: 72px;}
+	left: 77px;}
 .navigation{
-	right:0.8em;
+	right:1em;
 	z-index: 300;
 	}
 .navigation>div, .navigation>div.active{
@@ -265,48 +258,46 @@ img.animationImg {
 and (min-width : 321px) {
 /* Styles */
 .logo{
-	height:160px;
-	width:100px;
+	height:70px;
+	width:50px;
 	}
 h1{
-	font-size:2.3em;
-	}
-section {
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
-}
-footer {
-  position: absolute;
-  bottom: 30%;
-  left: 44%
-}	
-a.downbutton{
-	height: 27px;
-	width: 42px;
-	}
-section p{
-	font-size:1.5em;
-}
-.game-main h1{
 	font-size:2em;
 	}
-.parts{
-	width: 300px;
-	height: 210px;
+section p{
+	font-size:1em;
+}
+.main {
 	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
+}
+.game-main {
+	position: relative;
+}
+.game-main h1{
+	font-size:1.6em;
+	}
+.parts{
+	width: 285px;
+	height: 191px;
+	}
+.animation-main{
+	height:495px;
+	background:#fff;
+	width:900px;
+	display:block;
+	margin:0px auto;
+	}
+.animations{
+	float:left;
+	width:698px;
+	position:relative;
 	}
 .animation-main{
 	height:205px;
-	width:290px;
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
+	width:302px;
 	}
 .animations{
-	width: 290px;
+	width: 300px;
 	}
 img.animationImg {
 	height: 168px;
@@ -314,24 +305,24 @@ img.animationImg {
 	margin-top: 27px;
 }
 .actions{
-	width:70px;
+	width:80px;
 	}
 .actions ul li{
-	font-size:0.5em;
+	font-size:0.6em;
 	height:4px;
 	line-height:4px;
 	}
 .scoreArea, .finishHimBtn{
-	left:140px;
+	left:150px;
 	top:5px;
 	padding:5px;
 	width:60px;
 	font-size:0.7em;
 	}
 .finishHimBtn{
-	left: 72px;}
+	left: 77px;}
 .navigation{
-	right:0.8em;
+	right:1em;
 	z-index: 300;
 	}
 .navigation>div, .navigation>div.active{
@@ -343,51 +334,31 @@ img.animationImg {
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 360px) {
+and (max-width : 320px) {
 /* Styles */
 .logo{
-	height:160px;
-	width:100px;
+	height:70px;
+	width:50px;
 	}
 h1{
-	font-size:2.3em;
-	}
-section {
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
-}
-footer {
-  position: absolute;
-  bottom: 30%;
-  left: 44%
-}	
-a.downbutton{
-	height: 27px;
-	width: 42px;
-	}
-section p{
-	font-size:1.5em;
-}
-.game-main h1{
 	font-size:2em;
 	}
+section p{
+	font-size:1em;
+	}
+.game-main h1{
+	font-size:1.6em;
+	}
 .parts{
-	width: 300px;
-	height: 210px;
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
+	width: 285px;
+	height: 191px;
 	}
 .animation-main{
 	height:205px;
-	width:290px;
-	position: relative;
-	top: 30%;
-	transform: translateY(-50%);
+	width:302px;
 	}
 .animations{
-	width: 290px;
+	width: 300px;
 	}
 img.animationImg {
 	height: 168px;
@@ -395,30 +366,94 @@ img.animationImg {
 	margin-top: 27px;
 }
 .actions{
-	width:70px;
+	width:80px;
 	}
 .actions ul li{
-	font-size:0.5em;
+	font-size:0.6em;
 	height:4px;
 	line-height:4px;
 	}
 .scoreArea, .finishHimBtn{
-	left:140px;
+	left:150px;
 	top:5px;
 	padding:5px;
 	width:60px;
 	font-size:0.7em;
 	}
 .finishHimBtn{
-	left: 72px;}
+	left: 77px;}
 .navigation{
-	right:0.8em;
+	right:1em;
 	z-index: 300;
 	}
 .navigation>div, .navigation>div.active{
 	height:10px;
 	width:10px;
 	margin:0px 0px 5px 0px;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.3em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:150px;
+	top:5px;
+	padding:5px;
+	width:60px;
+	font-size:0.7em;
+	}
+.finishHimBtn{
+	left: 77px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
 	}
 }
 
@@ -436,7 +471,7 @@ h1{
 	font-size:3.6em;
 	}
 section p{
-	font-size:1.5em;
+	font-size:1.3em;
 	}
 .game-main h1{
 	font-size:2.5em;
@@ -446,7 +481,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:445px;
+	height:495px;
 	width:900px;
 	}
 .animations{
@@ -487,18 +522,7 @@ img.animationImg {
 	width:15px;
 	margin:0px 0px 10px 0px;
 	}
-footer {
-  bottom: 0;
-  left: 44%
-}	
-a.downbutton{
-	height:27px;
-	width:42px;
-	margin:40px 10px 20px;
-	background-size: 100%;
-	}
 }
-
 
 /* iPads (portrait) ----------- */
 @media only screen 
@@ -514,7 +538,7 @@ h1{
 	font-size:3.6em;
 	}
 section p{
-	font-size:1.5em;
+	font-size:1.3em;
 	}
 .game-main h1{
 	font-size:2.5em;
@@ -524,7 +548,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:445px;
+	height:495px;
 	width:900px;
 	}
 .animations{
@@ -558,25 +582,13 @@ img.animationImg {
 	left: 480px;}
 .navigation{
 	right:2em;
-	z-index: 300;
 	}
 .navigation>div, .navigation>div.active{
 	height:15px;
 	width:15px;
 	margin:0px 0px 10px 0px;
 	}
-footer {
-  bottom: 0;
-  left: 44%
-}	
-a.downbutton{
-	height:27px;
-	width:42px;
-	margin:40px 10px 20px;
-	background-size: 100%;
-	}
 }
-
 @media only screen 
 and (min-width : 768px) {
 /* Styles */
@@ -588,7 +600,7 @@ h1{
 	font-size:3.6em;
 	}
 section p{
-	font-size:1.5em;
+	font-size:1.3em;
 	}
 .game-main h1{
 	font-size:2.5em;
@@ -598,7 +610,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:445px;
+	height:495px;
 	width:900px;
 	}
 .animations{
@@ -639,20 +651,9 @@ img.animationImg {
 	width:15px;
 	margin:0px 0px 10px 0px;
 	}
-footer {
-  bottom: 0;
-  left: 44%
-}	
-a.downbutton{
-	height:27px;
-	width:42px;
-	margin:40px 10px 20px;
-	background-size: 100%;
 	}
-}
 
 /* Desktops and laptops ----------- */
-
 @media only screen 
 and (min-width : 1024px) {
 /* Styles */
@@ -674,7 +675,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:445px;
+	height:495px;
 	width:900px;
 	}
 .animations{
@@ -715,16 +716,81 @@ img.animationImg {
 	width:15px;
 	margin:0px 0px 10px 0px;
 	}
-footer {
-  bottom: 0;
-  left: 44%
-}	
-a.downbutton{
-	height:27px;
-	width:42px;
-	margin:40px 10px 20px;
-	background-size: 100%;
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
 	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.5em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+
 }
 
 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+}
