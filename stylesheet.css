@@ -103,7 +103,7 @@ a.downbutton{
 	background:#fff;
 	width:900px;
 	display:block;
-	margin:20px auto;
+	margin:0px auto;
 	border: 1px solid #E7E7E7;
 	position:relative;
 	}
@@ -199,16 +199,10 @@ section p{
 .parts{
 	width: 285px;
 	height: 191px;
-	position: relative;
-	top: 10%;
-	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:302px;
-	position: relative;
-	top: 20%;
-	transform: translateY(-50%);
 	}
 .animations{
 	width: 300px;
@@ -271,16 +265,10 @@ section p{
 .parts{
 	width: 285px;
 	height: 191px;
-	position: relative;
-	top: 10%;
-	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:302px;
-	position: relative;
-	top: 20%;
-	transform: translateY(-50%);
 	}
 .animations{
 	width: 300px;
@@ -343,16 +331,10 @@ section p{
 .parts{
 	width: 285px;
 	height: 191px;
-	position: relative;
-	top: 10%;
-	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:302px;
-	position: relative;
-	top: 20%;
-	transform: translateY(-50%);
 	}
 .animations{
 	width: 300px;
