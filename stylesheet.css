@@ -1,0 +1,796 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding:0;
+	margin:0;}
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+	position:fixed;
+	top:40%;
+	right:2em;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	border-radius:100%;
+	background:rgba(0,0,0, 0.7);
+	margin:0px 0px 10px 0px;
+	z-index: 300;
+	cursor:pointer;
+	}
+.navigation>div.active{
+	background:#f01663;
+	}
+.main{
+	height:100%;
+	width:100%;
+	}
+.logo{
+	background:url(images/logo.png) no-repeat center center;
+	height:180px;
+	width:120px;
+	background-size: 100%;
+	position:relative;
+	left:1em;
+	top:1em;
+	transition: all 0.5s linear;
+	}
+section{
+	color:#fff;
+	text-align:center;
+	margin:40px 20px 20px auto;}
+	
+h1{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:3.6em;
+	font-weight:bold;
+	margin:0px;
+	text-align:center;
+	transition: all 0.5s linear;
+	}
+.game-main h1{
+	padding:30px 10px 50px;
+	font-size:2.5em;
+	font-weight:normal;
+	}
+section p{
+	font-family: 'Arimo', sans-serif;
+	font-size:1.5em;
+	text-shadow: 0px 1px 0px #000;
+	transition: all 0.5s linear;
+	}
+footer{
+	text-align:center;
+	padding:10px 20px;
+	}
+a.downbutton{
+	background:url(images/down-arrow.png) no-repeat 0 0;
+	height:27px;
+	width:42px;
+	text-align:center;
+	display:inline-block;
+	margin:40px 10px 20px;
+	}
+.game-main{
+	padding:0px 0px 22px;
+	margin:0px;
+	background:#fff;
+	height:100%;
+	width:100%;
+	}
+.parts{
+	background:url(images/parts.png) no-repeat center center;
+	background-size:100%;
+	width:500px;
+	height:370px;
+	margin:0px auto;
+	}
+/*=== animation====*/
+.animation-main{
+	height:495px;
+	background:#fff;
+	width:900px;
+	display:block;
+	margin:0px auto;
+	border: 1px solid #E7E7E7;
+	position:relative;
+	}
+.animations{
+	float:left;
+	width: 698px;
+	position:relative;
+	}
+	
+img.animationImg {
+	display: block;
+	position: relative;
+	height: 492px;
+	width: 696px;
+	position:absolute;
+	top:0;
+	left:0;	
+}
+.scoreArea, .finishHimBtn{
+	position:absolute;
+	left:590px;
+	top:10px;
+	padding:10px;
+	background:#0CC;
+	border-radius: 3px;
+	z-index:100;
+	font-family: 'Arimo', sans-serif;
+	width:85px;
+	text-align:center;	
+	font-size:1.2em;
+	}
+.finishHimBtn{
+	cursor:pointer;
+	background:#f01663;
+	top: 10px;
+	left: 480px;
+	color:#fff;}
+.actions{
+	float:right;
+	width:200px;
+	}
+.actions ul{
+	padding:0px;
+	margin:0px;
+	font-family: 'Ubuntu', sans-serif;
+	background:#fff;
+	}
+.actions ul li{
+	padding:10px;
+	background:#e4e4e4;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	list-style-type:none; 
+	cursor:pointer;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	color:#000;
+	}
+.actions ul li:hover, .actions ul li.active{
+	background:#fff;	
+	}
+
+.show{
+	disply:block;}
+.hide{
+	display:none;}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.logo{
+	height:70px;
+	width:50px;
+	}
+h1{
+	font-size:2em;
+	}
+section {
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+}
+footer {
+  position: absolute;
+  bottom: px;
+  bottom: 0px;
+  left: 44%
+}	
+section p{
+	font-size:1em;
+}
+.game-main h1{
+	font-size:1.6em;
+	}
+.parts{
+	width: 285px;
+	height: 191px;
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+	}
+.animation-main{
+	height:205px;
+	width:302px;
+
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+	}
+.animations{
+	width: 300px;
+	}
+img.animationImg {
+	height: 168px;
+	width: 221px;
+	margin-top: 27px;
+}
+.actions{
+	width:80px;
+	}
+.actions ul li{
+	font-size:0.6em;
+	height:4px;
+	line-height:4px;
+	}
+.scoreArea, .finishHimBtn{
+	left:150px;
+	top:5px;
+	padding:5px;
+	width:60px;
+	font-size:0.7em;
+	}
+.finishHimBtn{
+	left: 77px;}
+.navigation{
+	right:1em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:10px;
+	width:10px;
+	margin:0px 0px 5px 0px;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+.logo{
+	height:70px;
+	width:50px;
+	}
+h1{
+	font-size:2em;
+	}
+section p{
+	font-size:1em;
+}
+.main {
+	position: relative;
+}
+.game-main {
+	position: relative;
+}
+.game-main h1{
+	font-size:1.6em;
+	}
+.parts{
+	width: 285px;
+	height: 191px;
+	}
+.animation-main{
+	height:495px;
+	background:#fff;
+	width:900px;
+	display:block;
+	margin:0px auto;
+	}
+.animations{
+	float:left;
+	width:698px;
+	position:relative;
+	}
+.animation-main{
+	height:205px;
+	width:302px;
+	}
+.animations{
+	width: 300px;
+	}
+img.animationImg {
+	height: 168px;
+	width: 221px;
+	margin-top: 27px;
+}
+.actions{
+	width:80px;
+	}
+.actions ul li{
+	font-size:0.6em;
+	height:4px;
+	line-height:4px;
+	}
+.scoreArea, .finishHimBtn{
+	left:150px;
+	top:5px;
+	padding:5px;
+	width:60px;
+	font-size:0.7em;
+	}
+.finishHimBtn{
+	left: 77px;}
+.navigation{
+	right:1em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:10px;
+	width:10px;
+	margin:0px 0px 5px 0px;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+.logo{
+	height:70px;
+	width:50px;
+	}
+h1{
+	font-size:2em;
+	}
+section p{
+	font-size:1em;
+	}
+.game-main h1{
+	font-size:1.6em;
+	}
+.parts{
+	width: 285px;
+	height: 191px;
+	}
+.animation-main{
+	height:205px;
+	width:302px;
+	}
+.animations{
+	width: 300px;
+	}
+img.animationImg {
+	height: 168px;
+	width: 221px;
+	margin-top: 27px;
+}
+.actions{
+	width:80px;
+	}
+.actions ul li{
+	font-size:0.6em;
+	height:4px;
+	line-height:4px;
+	}
+.scoreArea, .finishHimBtn{
+	left:150px;
+	top:5px;
+	padding:5px;
+	width:60px;
+	font-size:0.7em;
+	}
+.finishHimBtn{
+	left: 77px;}
+.navigation{
+	right:1em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:10px;
+	width:10px;
+	margin:0px 0px 5px 0px;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.3em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:150px;
+	top:5px;
+	padding:5px;
+	width:60px;
+	font-size:0.7em;
+	}
+.finishHimBtn{
+	left: 77px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.3em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}
+	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.3em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}
+	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+.navigation{
+	right:2em;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+}
+@media only screen 
+and (min-width : 768px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.3em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}
+	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+	}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1024px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.5em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}
+	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.5em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:495px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+
+}
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+}
