@@ -102,11 +102,11 @@ $(document).ready(function () {
 
 		if(currentTarget.hasClass('slideOne')) {
 			$(".sideTwo").addClass('active');
-			$('body').animate({scrollTop : bodyArea.offset().top}, 500, 'swing');
+			$body.animate({scrollTop : bodyArea.offset().top}, 500, 'swing');
 		}
 		else if(currentTarget.hasClass('slideTwo')) {
 			$(".sideThree").addClass('active');
-			$('body').animate({scrollTop : playArea.offset().top}, 500, 'swing');
+			$body.animate({scrollTop : playArea.offset().top}, 500, 'swing');
 		} 
 	});
 
