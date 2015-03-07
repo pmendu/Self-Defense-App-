@@ -182,8 +182,8 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
 .logo{
-	height:150px;
-	width:90px;
+	height:160px;
+	width:100px;
 	}
 h1{
 	font-size:2.3em;
@@ -207,17 +207,19 @@ section p{
 }
 .game-main h1{
 	font-size:2em;
-	position:relative;
-	top:30%;
 	}
 .parts{
 	width: 300px;
 	height: 210px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:290px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animations{
