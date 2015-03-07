@@ -90,6 +90,7 @@ a.downbutton{
 	background:#fff;
 	height:100%;
 	width:100%;
+	position: relative;
 	}
 .parts{
 	background:url(images/parts.png) no-repeat center center;
@@ -104,7 +105,7 @@ a.downbutton{
 	background:#fff;
 	width:900px;
 	display:block;
-	margin:0px auto;
+	margin:10px auto;
 	border: 1px solid #E7E7E7;
 	position:relative;
 	}
@@ -112,7 +113,6 @@ a.downbutton{
 	float:left;
 	width: 698px;
 	position:relative;
-	overflow:hidden;
 	}
 	
 img.animationImg {
@@ -263,8 +263,8 @@ img.animationImg {
 and (min-width : 321px) {
 /* Styles */
 .logo{
-	height:150px;
-	width:90px;
+	height:160px;
+	width:100px;
 	}
 h1{
 	font-size:2.3em;
@@ -288,17 +288,19 @@ section p{
 }
 .game-main h1{
 	font-size:2em;
-	position:relative;
-	top:30%;
 	}
 .parts{
 	width: 300px;
 	height: 210px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:290px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animations{
@@ -342,8 +344,8 @@ img.animationImg {
 and (max-width : 360px) {
 /* Styles */
 .logo{
-	height:150px;
-	width:90px;
+	height:160px;
+	width:100px;
 	}
 h1{
 	font-size:2.3em;
@@ -367,17 +369,19 @@ section p{
 }
 .game-main h1{
 	font-size:2em;
-	position:relative;
-	top:30%;
 	}
 .parts{
 	width: 300px;
 	height: 210px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animation-main{
 	height:205px;
 	width:290px;
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	}
 .animations{
@@ -430,7 +434,7 @@ h1{
 	font-size:3.6em;
 	}
 section p{
-	font-size:1.3em;
+	font-size:1.5em;
 	}
 .game-main h1{
 	font-size:2.5em;
@@ -440,7 +444,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:495px;
+	height:445px;
 	width:900px;
 	}
 .animations{
@@ -480,6 +484,16 @@ img.animationImg {
 	height:15px;
 	width:15px;
 	margin:0px 0px 10px 0px;
+	}
+footer {
+  bottom: 0;
+  left: 44%
+}	
+a.downbutton{
+	height:27px;
+	width:42px;
+	margin:40px 10px 20px;
+	background-size: 100%;
 	}
 }
 
@@ -498,70 +512,7 @@ h1{
 	font-size:3.6em;
 	}
 section p{
-	font-size:1.3em;
-	}
-.game-main h1{
-	font-size:2.5em;
-	}
-.parts{
-	width: 500px;
-	height: 370px;
-	}
-.animation-main{
-	height:495px;
-	width:900px;
-	}
-.animations{
-	width: 698px;
-	}
-	
-img.animationImg {
-	height: 492px;
-	width: 696px;
-	margin-top: 0px;
-}
-.actions{
-	width:200px;
-	}
-.actions ul li{
-	padding:10px;
 	font-size:1.5em;
-	margin:0px 0px 2px 0px;
-	height:40px;
-	line-height:40px;
-	}
-.scoreArea, .finishHimBtn{
-	left:590px;
-	top:10px;
-	padding:10px;
-	width:85px;
-	font-size:1em;
-	}
-.finishHimBtn{
-	top: 10px;
-	left: 480px;}
-.navigation{
-	right:2em;
-	}
-.navigation>div, .navigation>div.active{
-	height:15px;
-	width:15px;
-	margin:0px 0px 10px 0px;
-	}
-}
-
-@media only screen 
-and (min-width : 768px) {
-/* Styles */
-.logo{
-	height: 180px;
-	width: 120px;
-	}
-h1{
-	font-size:3.6em;
-	}
-section p{
-	font-size:1.3em;
 	}
 .game-main h1{
 	font-size:2.5em;
@@ -571,7 +522,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:495px;
+	height:445px;
 	width:900px;
 	}
 .animations{
@@ -612,7 +563,91 @@ img.animationImg {
 	width:15px;
 	margin:0px 0px 10px 0px;
 	}
+footer {
+  bottom: 0;
+  left: 44%
+}	
+a.downbutton{
+	height:27px;
+	width:42px;
+	margin:40px 10px 20px;
+	background-size: 100%;
 	}
+}
+
+@media only screen 
+and (min-width : 768px) {
+/* Styles */
+.logo{
+	height: 180px;
+	width: 120px;
+	}
+h1{
+	font-size:3.6em;
+	}
+section p{
+	font-size:1.5em;
+	}
+.game-main h1{
+	font-size:2.5em;
+	}
+.parts{
+	width: 500px;
+	height: 370px;
+	}
+.animation-main{
+	height:445px;
+	width:900px;
+	}
+.animations{
+	width: 698px;
+	}
+	
+img.animationImg {
+	height: 492px;
+	width: 696px;
+	margin-top: 0px;
+}
+.actions{
+	width:200px;
+	}
+.actions ul li{
+	padding:10px;
+	font-size:1.5em;
+	margin:0px 0px 2px 0px;
+	height:40px;
+	line-height:40px;
+	}
+.scoreArea, .finishHimBtn{
+	left:590px;
+	top:10px;
+	padding:10px;
+	width:85px;
+	font-size:1em;
+	}
+.finishHimBtn{
+	top: 10px;
+	left: 480px;}
+.navigation{
+	right:2em;
+	z-index: 300;
+	}
+.navigation>div, .navigation>div.active{
+	height:15px;
+	width:15px;
+	margin:0px 0px 10px 0px;
+	}
+footer {
+  bottom: 0;
+  left: 44%
+}	
+a.downbutton{
+	height:27px;
+	width:42px;
+	margin:40px 10px 20px;
+	background-size: 100%;
+	}
+}
 
 /* Desktops and laptops ----------- */
 
@@ -637,7 +672,7 @@ section p{
 	height: 370px;
 	}
 .animation-main{
-	height:495px;
+	height:445px;
 	width:900px;
 	}
 .animations{
@@ -677,6 +712,16 @@ img.animationImg {
 	height:15px;
 	width:15px;
 	margin:0px 0px 10px 0px;
+	}
+footer {
+  bottom: 0;
+  left: 44%
+}	
+a.downbutton{
+	height:27px;
+	width:42px;
+	margin:40px 10px 20px;
+	background-size: 100%;
 	}
 }
 
