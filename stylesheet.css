@@ -103,7 +103,7 @@ a.downbutton{
 	background:#fff;
 	width:900px;
 	display:block;
-	margin:0px auto;
+	margin:20px auto;
 	border: 1px solid #E7E7E7;
 	position:relative;
 	}
@@ -187,7 +187,7 @@ h1{
 	}
 section {
 	position: relative;
-	top: 30%;
+	top: 20%;
 	transform: translateY(-50%);
 }
 section p{
@@ -259,7 +259,7 @@ h1{
 	}
 section {
 	position: relative;
-	top: 30%;
+	top: 20%;
 	transform: translateY(-50%);
 }
 section p{
@@ -331,7 +331,7 @@ h1{
 	}
 section {
 	position: relative;
-	top: 30%;
+	top: 20%;
 	transform: translateY(-50%);
 }
 section p{
