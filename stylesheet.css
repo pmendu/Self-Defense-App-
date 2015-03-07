@@ -74,6 +74,8 @@ section p{
 footer{
 	text-align:center;
 	padding:10px 20px;
+	position:absolute;
+	bottom:10%;
 	}
 a.downbutton{
 	background:url(images/down-arrow.png) no-repeat 0 0;
@@ -276,7 +278,7 @@ section {
 }
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 30%;
   left: 44%
 }	
 a.downbutton{
